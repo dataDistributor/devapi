@@ -1,0 +1,19 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+actix-cors = "0.6"
+env_logger = "0.10"
+dotenv = "0.15"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sqlx = { version = "0.7", features = ["postgres", "runtime-tokio-native-tls", "chrono", "json"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+secrecy = "0.8"
+regex = "1"
+
+engine = { path = "../engine" }
+storage = { path = "../storage" }

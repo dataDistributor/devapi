@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "api",
+    "engine",
+    "storage",
+    "cli"
+]
+
+[workspace.package]
+edition = "2021"
